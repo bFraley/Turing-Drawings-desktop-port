@@ -48,8 +48,8 @@
                     </div>
 
                     <div style="margin-top:8px; margin-bottom:8px;">
-                        <button type="button" onclick="randomProg();">Random</button>
-                        <button type="button" onclick="restartProg();">Restart</button>
+                        <button type="button" onclick="canvas.randomProg();">Random</button>
+                        <button type="button" onclick="canvas.restartProg();">Restart</button>
                     </div>
 
                     <div style="margin-top:16px; margin-bottom:16px; width:400px; text-align: justify;">
@@ -87,9 +87,8 @@
         Ported to Desktop using Electron by Brett Fraley
         </div>
 
+        <script>
+          require('./turing-drawings-init.js')
+        </script>
     </body>
-
-    <script>
-      require('./orig-main.js')
-    </script>
 </html>

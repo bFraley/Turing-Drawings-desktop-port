@@ -56,6 +56,9 @@ function init()
     // Create an image data array
     canvas.imgData = canvas.ctx.createImageData(canvas.width, canvas.height);
 
+    canvas.randomProg = randomProg
+    canvas.restartProg = restartProg
+
     // If a location hash is specified
     if (location.hash !== '')
     {
@@ -70,7 +73,7 @@ function init()
     else
     {
         // Create a random program
-        randomProg();
+        canvas.randomProg();
     }
 
     // Set the update function to be called regularly
@@ -176,8 +179,8 @@ function updateRender()
 
     /*
     console.log(
-        'x: ' + program.xPos + 
-        ', y: ' + program.yPos + 
+        'x: ' + program.xPos +
+        ', y: ' + program.yPos +
         ', st: ' + program.curState +
         ', cc: ' + program.itrCount
     );
@@ -208,4 +211,3 @@ function updateRender()
     // Show the image data
     canvas.ctx.putImageData(canvas.imgData, 0, 0);
 }
-

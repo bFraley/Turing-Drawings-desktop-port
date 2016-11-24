@@ -1,24 +1,17 @@
+<!DOCTYPE html>
 <html>
     <head>
-
         <title>Turing Drawings</title>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <meta http-equiv="encoding" content="utf-8">
-        <meta name="keywords" content="javascript, html5, canvas, Alan Turing, Turing machine, drawing, evolutionary">
-        <meta name="description" content="">
-        <script language="javascript" src="utils-html.js"></script>
-        <script language="javascript" src="utils-misc.js"></script>
-        <script language="javascript" src="main.js"></script>
-        <script language="javascript" src="programs.js"></script>        
-
         <link rel=stylesheet href="stylesheet.css" type="text/css">
-
     </head>
-    <body>
 
-        <a href="https://github.com/maximecb/Turing-Drawings">
-        <img style="position: absolute; top: 0; right: 0; border: 0;" src="forkme.png" alt="Fork me on GitHub">
-        </a>
+    <body>
+        <p>Original project concept and source code by Maxime Calvier Boisvert
+          is<a href="https://github.com/maximecb/Turing-Drawings"> here, and
+          published online<a href="https://maximecb/github.io/turing-drawings"> here.</a>
+        </p>
+
+        <p>Ported to desktop using Electron by Brett Fraley.</p>
 
         <div class="title">
         Turing Drawings
@@ -35,7 +28,7 @@
                     </canvas>
                 </div>
             </td>
-        
+
             <!-- spacer column -->
             <td width="10">
             </td>
@@ -87,9 +80,14 @@
         </div>
 
         <div class="copyright">
-        Copyright &copy; 2012 Maxime Chevalier-Boisvert
+        Copyright &copy; 2012-2016 Maxime Chevalier-Boisvert<br />
+        Ported to Desktop using Electron by Brett Fraley
         </div>
 
     </body>
-</html>
 
+    <script>require('./utils-html.js')</script>
+    <script>require('./utils-misc.js')</script>
+    <script>require('./orig-main.js')</script>
+    <script>require('./programs.js')</script>
+</html>
